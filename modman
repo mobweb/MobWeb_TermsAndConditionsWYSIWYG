@@ -1,0 +1,10 @@
+app/code/community/MobWeb/TermsAndConditionsWYSIWYG app/code/community/MobWeb/TermsAndConditionsWYSIWYG/
+
+app/design/frontend/base/default/layout/mobweb_termsandconditionswysiwyg.xml app/design/frontend/base/default/layout/mobweb_termsandconditionswysiwyg.xml
+
+app/design/frontend/base/default/template/mobweb_termsandconditionswysiwyg app/design/frontend/base/default/template/mobweb_termsandconditionswysiwyg/
+
+app/etc/modules/MobWeb_TermsAndConditionsWYSIWYG.xml app/etc/modules/MobWeb_TermsAndConditionsWYSIWYG.xml
+
+# Clear the cache
+@shell   rm -rf $PROJECT/var/cache/* && echo "Magento Cache cleared"

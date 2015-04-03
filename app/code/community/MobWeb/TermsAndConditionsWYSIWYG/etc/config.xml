@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <MobWeb_TermsAndConditionsWYSIWYG>
+            <version>0.1.0</version>
+        </MobWeb_TermsAndConditionsWYSIWYG>
+    </modules>
+    <global>
+        <blocks>
+            <termsandconditionswysiwyg>
+                <class>MobWeb_TermsAndConditionsWYSIWYG_Block</class>
+            </termsandconditionswysiwyg>
+            <adminhtml>
+                <rewrite>
+                    <checkout_agreement_edit_form>MobWeb_TermsAndConditionsWYSIWYG_Block_Checkout_Agreement_Edit_Form</checkout_agreement_edit_form>
+                </rewrite>
+            </adminhtml>
+        </blocks>
+        <models>
+            <termsandconditionswysiwyg>
+                <class>MobWeb_TermsAndConditionsWYSIWYG_Model</class>
+            </termsandconditionswysiwyg>
+        </models>
+        <helpers>
+            <termsandconditionswysiwyg>
+                <class>MobWeb_TermsAndConditionsWYSIWYG_Helper</class>
+            </termsandconditionswysiwyg>
+        </helpers>
+        <events>
+            <!-- Debugging observer -->
+            <!--
+            <controller_front_init_before>
+                <observers>
+                    <brandturnover>
+                        <class>brandturnover/observer</class>
+                        <method>captureOrderSave</method>
+                        <type>singleton</type>
+                    </brandturnover >
+                </observers>
+            </controller_front_init_before>
+            -->
+        </events>
+    </global>
+    <frontend>
+        <layout>
+            <updates>
+                <termsandconditionswysiwyg>
+                    <file>mobweb_termsandconditionswysiwyg.xml</file>
+                </termsandconditionswysiwyg>
+            </updates>
+        </layout>
+    </frontend>
+</config>
